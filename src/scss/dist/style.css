@@ -1,0 +1,85 @@
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mt-7 {
+  margin-top: 12rem;
+}
+
+.negmt-1 {
+  margin-top: -0.5rem;
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-80 {
+    width: 80% !important;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #F1544C;
+}
+
+.navBtn__link {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+.navBtn__link--start {
+  border-color: #FAC4AE;
+  background-color: #FAC4AE;
+  color: #F1544C;
+}
+.navBtn__link--start:hover {
+  border-color: #F1544C;
+  background-color: #F1544C;
+  color: #FAC4AE;
+}
+.navBtn__link--learn {
+  border-color: #B7EDDD;
+  background-color: #B7EDDD;
+  color: #5cc7ac;
+}
+.navBtn__link--learn:hover {
+  border-color: #5cc7ac;
+  background-color: #5cc7ac;
+  color: #B7EDDD;
+}
+
+.thumbnail__link {
+  text-decoration: none;
+  font-weight: bold;
+}
+.thumbnail__link:hover {
+  text-decoration: none;
+}
+.thumbnail__link--grey {
+  color: #8795b6;
+}
+
+.card {
+  border-color: transparent;
+  padding: 2rem 0 1rem 0;
+}
+.card__underline {
+  margin: -0.5rem auto 0.5rem auto;
+  display: block;
+  height: 4px;
+  width: 20%;
+}
+.card__underline--black {
+  background-color: black;
+}
+.card__underline--orange {
+  background-color: #F1544C;
+}

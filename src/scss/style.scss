@@ -1,0 +1,102 @@
+$orange: #F1544C;
+$orange-bcg: #FAC4AE;
+$green: #5cc7ac;
+$green-bcg: #B7EDDD;
+$grey: #8795b6;
+$screen-md: 768px;
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mt-7 {
+  margin-top: 12rem;
+}
+
+.negmt-1 {
+  margin-top: -0.5rem;
+}
+
+.w-md-50 {
+  @media (min-width: $screen-md) {
+    width: 50% !important;
+  }
+}
+
+.w-md-80 {
+  @media (min-width: $screen-md) {
+    width: 80% !important;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.navBtn__link {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+
+  &--start {
+    border-color: $orange-bcg;
+    background-color: $orange-bcg;
+    color: $orange;
+
+    &:hover {
+      border-color: $orange;
+      background-color: $orange;
+      color: $orange-bcg;
+    }
+  }
+
+  &--learn {
+    border-color: $green-bcg;
+    background-color: $green-bcg;
+    color: $green;
+
+    &:hover {
+      border-color: $green;
+      background-color: $green;
+      color: $green-bcg;
+    }
+  }
+}
+
+.thumbnail__link {
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--grey {
+    color: $grey;
+  }
+}
+
+.card {
+  border-color: transparent;
+  padding: 2.0rem 0 1.0rem 0;
+
+  &__underline {
+    margin: -0.5rem auto 0.5rem auto;
+    display: block;
+    height: 4px;
+    width: 20%;
+  
+    &--black {
+      background-color: black;
+    }
+  
+    &--orange {
+      background-color: $orange;;
+    }
+  }
+}
