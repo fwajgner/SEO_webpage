@@ -5,6 +5,10 @@ $green-bcg: #B7EDDD;
 $grey: #8795b6;
 $screen-md: 768px;
 
+body {
+  font-weight: 500;
+}
+
 .mt-6 {
   margin-top: 6rem;
 }
@@ -13,7 +17,7 @@ $screen-md: 768px;
   margin-top: 12rem;
 }
 
-.negmt-1 {
+.negmt-2 {
   margin-top: -0.5rem;
 }
 
@@ -90,13 +94,88 @@ $screen-md: 768px;
     display: block;
     height: 4px;
     width: 20%;
-  
+
     &--black {
       background-color: black;
     }
-  
+
     &--orange {
-      background-color: $orange;;
+      background-color: $orange;
+      ;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rem 0;
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__overlay {
+    width: 100%;
+    text-align: center;
+
+    &--title {
+      max-width: 35% !important;
+      margin: 0 auto;
+    }
+
+    &--link {
+      background-color: white;
+      color: $orange;
+      border-width: 2px;
+      border-radius: 25px !important;
+      border-color: $orange;
+
+      &:hover {
+        background-color: $orange;
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+}
+
+.email-textarea {
+  width: 100%;
+    border: none;
+    outline: none;
+    background-color: #f8f9fa;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+
+  &__link {
+    color: inherit;
+    
+    &:hover {
+      font-weight: 500;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 3px;
+
+  &-black {
+    background-color: black;
+    color: gainsboro;
+
+    &:hover {
+      color: white;
     }
   }
 }

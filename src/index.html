@@ -18,6 +18,8 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="scss/dist/style.css">
   <title>Document</title>
 </head>
@@ -59,7 +61,7 @@
 
       <!-- HEADER, BUTTONS, IMAGE -->
       <div class="mt-5 text-center">
-        <h1 class="font-weight-bold w-50 mx-auto">Search Engine optimisation &amp; Marketing.</h1>
+        <h1 class="font-weight-bold mx-auto">Search Engine optimisation &amp; <br> Marketing.</h1>
         <p class="text-muted">Simple is a simple template with a creative design that solves all your marketing and SEO
           queries.</p>
       </div>
@@ -191,7 +193,7 @@
       <section class="mt-6 text-center">
         <article class="">
           <h2 class="">What our customers have to say</h2>
-          <p class="text-muted font-weight-bold">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </article>
 
         <div class="row mt-5">
@@ -205,7 +207,7 @@
               </div>
               <div class="card__underline card__underline--black"></div>
               <h6 class="card-title">Cody Lambert</h6>
-              <p class="text-muted font-weight-bold negmt-1">Marketing Manager</>
+              <p class="text-muted negmt-2">Marketing Manager</>
             </div>
           </div>
 
@@ -219,7 +221,7 @@
               </div>
               <div class="card__underline card__underline--orange"></div>
               <h6 class="card-title">Cody Lambert</h6>
-              <p class="text-muted font-weight-bold negmt-1">Marketing Manager</>
+              <p class="text-muted negmt-2">Marketing Manager</>
             </div>
           </div>
 
@@ -233,22 +235,31 @@
               </div>
               <div class="card__underline card__underline--black"></div>
               <h6 class="card-title">Tony Martinez</h6>
-              <p class="text-muted font-weight-bold negmt-1">Marketing Manager</>
+              <p class="text-muted negmt-2">Marketing Manager</>
             </div>
           </div>
+        </div>
+
+        <div class="mt-3">
+          <input type="radio" name="" id="radio1">
+          <label for="radio1"></label>
+          <input type="radio" name="" id="radio1">
+          <label for="radio1"></label>
+          <input type="radio" name="" id="radio1">
+          <label for="radio1"></label>
         </div>
 
       </section>
 
       <!-- CONTACT US -->
-      <section class="mt-6 text-center">
+      <section class="">
 
         <article class="">
-          <div class="card text-black">
-            <img src="http://via.placeholder.com/500x100" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h3 class="card-title">Do you have any projects? Contact us</h3>
-              <a class="btn btn-primary">Contact Us</a>
+          <div class="contact">
+            <img src="http://via.placeholder.com/1000x230" class="contact__img" alt="">
+            <div class="contact__overlay">
+              <h3 class="contact__overlay--title">Do you have any projects? Contact us</h3>
+              <a class="btn mt-3 contact__overlay--link">Contact Us</a>
             </div>
           </div>
         </article>
@@ -258,50 +269,53 @@
     </div>
   </main>
   <footer>
-    <div class="container">
+    <div class="container mt-6 font-weight-normal">
 
       <div class="row">
-        <div class="col-6 col-md-3">
-          <img src="http://via.placeholder.com/200x40" class="img-fluid" alt="">
-          <p class="">mikayla_beer@feil.name</p>
-          <p class="">906-179-8309</p>
+        <div class="col-6 col-md-3 text-muted">
+          <img src="http://via.placeholder.com/130x20" class="img-fluid" alt="">
+          <p class="mt-3">mikayla_beer@feil.name <br> 906-179-8309</p>
         </div>
 
         <div class="col-6 col-md-3">
-          <h6 class="">Get In Touch</h6>
-          <p>Don't miss any updates of our new templates and extenstions</p>
-          <div class="form-group">
-            <label for="emailId" hidden>Email address</label>
-            <input type="email" class="form-control" name="" id="" aria-describedby="emailId" placeholder="Email id">
-          </div>
-          <button type="button" class="btn btn-primary">Subscribe</button>
+          <h5 class="">Get In Touch</h5>
+          <p class="text-muted mt-3">Don't miss any updates of our new templates and extenstions!</p>
+          <label for="emailId" hidden></label>
+          <input
+            class="email-textarea"
+            type="email" 
+            name="emailId" 
+            id="email" 
+            aria-describedby="emailId" 
+            placeholder="Email id">
+          <button type="button" class="mt-3 btn btn-black">Subscribe</button>
         </div>
 
         <div class="col-6 col-md-3">
-          <h6 class="">Our Guidelines</h6>
-          <ul class="">
-            <li class="">Terms</li>
-            <li class="">Privacy policy</li>
-            <li class="">Cookie Policy</li>
-            <li class="">Discover</li>
+          <h5 class="">Our Guidelines</h5>
+          <ul class="mt-3 text-muted footer-list">
+            <li class=""><a href="" class="footer-list__link">Terms</a></li>
+            <li class="mt-2"><a href="" class="footer-list__link">Privacy policy</a></li>
+            <li class="mt-2"><a href="" class="footer-list__link">Cookie Policy</a></li>
+            <li class="mt-2"><a href="" class="footer-list__link">Discover</a></li>
           </ul>
         </div>
 
         <div class="col-6 col-md-3">
-          <h6 class="">Our address</h6>
-          <p>518 Schmeler Neck Bartlett, Illinois</p>
-          <div class="">
-            <span class=""></span>
-            <span class=""></span>
-            <span class=""></span>
-            <span class=""></span>
+          <h5 class="">Our address</h5>
+          <p class="mt-3 text-muted">518 Schmeler Neck <br> Bartlett, Illinois</p>
+          <div class="d-flex justify-content-start">
+            <span class="mr-4 fa fa-facebook"></span>
+            <span class="mr-4 fa fa-twitter"></span>
+            <span class="mr-4 fa fa-instagram"></span>
+            <span class="fa fa-linkedin"></span>
           </div>
         </div>
       </div>
 
-      <hr>
+      <hr class="mt-6">
 
-      <p class="">Copyright &copy; 2019 <span class="">Boostrapdash.</span> All rights reserved</p>
+      <p class="text-center text-muted">Copyright &copy; 2019 <span class="">Boostrapdash.</span> All rights reserved</p>
 
     </div>
   </footer>

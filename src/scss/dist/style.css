@@ -1,3 +1,7 @@
+body {
+  font-weight: 500;
+}
+
 .mt-6 {
   margin-top: 6rem;
 }
@@ -6,7 +10,7 @@
   margin-top: 12rem;
 }
 
-.negmt-1 {
+.negmt-2 {
   margin-top: -0.5rem;
 }
 
@@ -82,4 +86,69 @@
 }
 .card__underline--orange {
   background-color: #F1544C;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rem 0;
+}
+.contact__img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.contact__overlay {
+  width: 100%;
+  text-align: center;
+}
+.contact__overlay--title {
+  max-width: 35% !important;
+  margin: 0 auto;
+}
+.contact__overlay--link {
+  background-color: white;
+  color: #F1544C;
+  border-width: 2px;
+  border-radius: 25px !important;
+  border-color: #F1544C;
+}
+.contact__overlay--link:hover {
+  background-color: #F1544C;
+  border-color: white;
+  color: white;
+}
+
+.email-textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-list__link {
+  color: inherit;
+}
+.footer-list__link:hover {
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 3px;
+}
+.btn-black {
+  background-color: black;
+  color: gainsboro;
+}
+.btn-black:hover {
+  color: white;
 }
