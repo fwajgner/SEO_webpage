@@ -1,0 +1,200 @@
+$orange: #F1544C;
+$orange-bcg: #FAC4AE;
+$green: #5cc7ac;
+$green-bcg: #B7EDDD;
+$grey: #8795b6;
+$screen-md: 768px;
+
+body {
+  font-weight: 500;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mt-7 {
+  margin-top: 12rem;
+}
+
+.negmt-2 {
+  margin-top: -0.5rem;
+}
+
+.w-md-50 {
+  @media (min-width: $screen-md) {
+    width: 50% !important;
+  }
+}
+
+.w-md-80 {
+  @media (min-width: $screen-md) {
+    width: 80% !important;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.navBtn__link {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+
+  &--start {
+    border-color: $orange-bcg;
+    background-color: $orange-bcg;
+    color: $orange;
+
+    &:hover {
+      border-color: $orange;
+      background-color: $orange;
+      color: $orange-bcg;
+    }
+  }
+
+  &--learn {
+    border-color: $green-bcg;
+    background-color: $green-bcg;
+    color: $green;
+
+    &:hover {
+      border-color: $green;
+      background-color: $green;
+      color: $green-bcg;
+    }
+  }
+}
+
+.thumbnail {
+  @media (max-width: $screen-md) {
+    margin-top: 3rem;;
+  }
+
+  .thumbnail__link {
+    text-decoration: none;
+    font-weight: bold;
+  
+    &:hover {
+      text-decoration: none;
+    }
+  
+    &--grey {
+      color: $grey;
+    }
+  }
+}
+
+.card {
+  @media (max-width: $screen-md) {
+    margin-top: 3rem;;
+  }
+
+  border-color: transparent;
+  padding: 2.0rem 0 1.0rem 0;
+
+  &__underline {
+    margin: -0.5rem auto 0.5rem auto;
+    display: block;
+    height: 4px;
+    width: 20%;
+
+    &--black {
+      background-color: black;
+    }
+
+    &--orange {
+      background-color: $orange;
+      ;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rem 0;
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__overlay {
+    width: 100%;
+    text-align: center;
+
+    &--title {
+      max-width: 35% !important;
+      margin: 0 auto;
+
+      @media (max-width: $screen-md) {
+        max-width: 75% !important;
+      }
+    }
+
+    &--link {
+      background-color: white;
+      color: $orange;
+      border-width: 2px;
+      border-radius: 25px !important;
+      border-color: $orange;
+
+      &:hover {
+        background-color: $orange;
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+}
+
+.email-textarea {
+  padding: 5px 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+
+  &__link {
+    color: inherit;
+
+    &:hover {
+      font-weight: 500;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 3px;
+
+  &-black {
+    background-color: black;
+    color: gainsboro;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer__p--orange {
+  color: $orange;
+}
