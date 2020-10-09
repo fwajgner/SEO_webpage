@@ -72,20 +72,30 @@ body {
   }
 }
 
-.thumbnail__link {
-  text-decoration: none;
-  font-weight: bold;
-
-  &:hover {
-    text-decoration: none;
+.thumbnail {
+  @media (max-width: $screen-md) {
+    margin-top: 3rem;;
   }
 
-  &--grey {
-    color: $grey;
+  .thumbnail__link {
+    text-decoration: none;
+    font-weight: bold;
+  
+    &:hover {
+      text-decoration: none;
+    }
+  
+    &--grey {
+      color: $grey;
+    }
   }
 }
 
 .card {
+  @media (max-width: $screen-md) {
+    margin-top: 3rem;;
+  }
+
   border-color: transparent;
   padding: 2.0rem 0 1.0rem 0;
 
@@ -126,6 +136,10 @@ body {
     &--title {
       max-width: 35% !important;
       margin: 0 auto;
+
+      @media (max-width: $screen-md) {
+        max-width: 75% !important;
+      }
     }
 
     &--link {
@@ -145,10 +159,11 @@ body {
 }
 
 .email-textarea {
+  padding: 5px 5px;
   width: 100%;
-    border: none;
-    outline: none;
-    background-color: #f8f9fa;
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
 }
 
 .footer-list {
@@ -157,7 +172,7 @@ body {
 
   &__link {
     color: inherit;
-    
+
     &:hover {
       font-weight: 500;
       text-decoration: none;
@@ -178,4 +193,8 @@ body {
       color: white;
     }
   }
+}
+
+.footer__p--orange {
+  color: $orange;
 }
